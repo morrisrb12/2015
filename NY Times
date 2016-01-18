@@ -1,0 +1,26 @@
+impressions = 0 
+age = 0 
+clicks = 0 
+max_age = 0 
+
+f = 'sample.csv'
+
+#load all csv into a new list of lists and convert from strings to values
+values = []
+lines = f.readlines()
+lines.pop[0]
+for line in lines:
+	values.append( [int(n) for n in line.strip().split(',')] )
+	values.append(line)
+
+#find max age
+for line in values:
+	if line[0] > max_age:
+		max_age = line[0]
+
+#def Create Unique Record
+UniqueRecords = []
+UniqueRecords.append([x, y, z] for x in range(max_age + 1) for y in range(1) for z in range(1))
+
+#def CountRecords(f):
+UniqueRecordCount = {}
